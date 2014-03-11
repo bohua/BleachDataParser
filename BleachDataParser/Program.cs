@@ -11,7 +11,6 @@ namespace xlsParser
 	{
 		static void Main(string[] args)
 		{
-			
 			if (args.Length < 1)
 			{
 				Console.Write("Error: Please give at least one xls file path!");
@@ -73,7 +72,7 @@ namespace xlsParser
 			report.daily_sum_consumption_alun_1 = injectIntoClass(sheet.GetRow(32).GetCell(10));
 			report.daily_sum_consumption_alun_2 = injectIntoClass(sheet.GetRow(33).GetCell(10));
 			report.daily_sum_consumption_alun_3 = injectIntoClass(sheet.GetRow(34).GetCell(10));
-			report.daily_sum_consumption_alun_total = injectIntoClass(sheet.GetRow(32).GetCell(2));
+			report.daily_sum_consumption_alun_total = injectIntoClass(sheet.GetRow(32).GetCell(12));
 			report.daily_sum_consumption_alun_avg = injectIntoClass(sheet.GetRow(32).GetCell(13));
 
 			report.daily_sum_consumption_alkali_1 = injectIntoClass(sheet.GetRow(35).GetCell(10));
